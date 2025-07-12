@@ -11,18 +11,10 @@ A responsive and interactive employee directory built using HTML, CSS, JavaScrip
 - Filter, search, and sort employees
 - Responsive design for mobile and desktop
 - Pagination (10/25/50/100 items)
-
-## Getting Started
-You can open index.html directly or deploy using a Freemarker-compatible web server.
+we can open index.html directly or deploy using a Freemarker-compatible web server.
 
 ## Folder Structure
 - index.html – Dashboard
 - form.html – Add/Edit form
 - public/css/ – CSS styles
 - public/js/ – JavaScript functionality
-
-## Screenshots
-(Add your screenshots here)
-
-## Reflection
-> Built without backend. If extended, I would add server-side persistence and user authentication.
