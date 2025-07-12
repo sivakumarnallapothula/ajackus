@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="public/css/styles.css" />
+</head>
+<body>
+  <div class="header">
+    <input type="text" id="searchInput" placeholder="Search by name or email" onkeyup="searchEmployees()" />
+    <button onclick="toggleFilter()">Filter</button>
+    <select id="sortSelect" onchange="sortEmployees()">
+      <option value="firstName">Sort by First Name</option>
+      <option value="department">Sort by Department</option>
+    </select>
+  </div>
+
+  <div class="filter-sidebar" id="filterSidebar">
+    <label>First Name: <input type="text" id="filterFirstName" /></label>
+    <label>Department: <input type="text" id="filterDepartment" /></label>
+    <label>Role: <input type="text" id="filterRole" /></label>
+    <button onclick="applyFilter()">Apply</button>
+  </div>
+
+  <div class="employee-container" id="employeeContainer">
+    <!-- Employee cards will be injected here -->
+  </div>
+
+  <div class="pagination">
+    <label>Show: 
+      <select id="pageSizeSelect" onchange="changePageSize()">
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>100</option>
+      </select>
+    </label>
+  </div>
+
+  <script src="public/js/main.js"></script>
+</body>
+</html>
